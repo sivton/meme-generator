@@ -1,6 +1,6 @@
 # Meme generator build using React
 
-## What I learnt:
+## What I have learnt:
 - **Event listeners** - how we can add the dynamic interactive aspect to the web application
 - **State** 
 - **Conditional rendering**
