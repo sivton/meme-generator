@@ -12,13 +12,14 @@ export default function Meme() {
     const [allMemes, setAllMemes] = React.useState([])
 
 
-    React.useEffect(
-        () => { 
-            fetch("https://api.imgflip.com/get_memes")
-                .then(res => res.json())
-                .then(data => setAllMemes(data))
-        }, []
-    )
+    React.useEffect(() => { 
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => setAllMemes(data))
+        return () => {
+            
+        }
+    }, [])
 
     function getMemeImage() {
         const memesArray = allMemes.data.memes;
